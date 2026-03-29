@@ -67,6 +67,14 @@ python3 analyzer.py extract "<keyword>" --from "this-week" --to "today"
 python3 analyzer.py extract-all --from "last-week"
 ```
 
+## 定制报告
+
+`SKILL.md` 中的 **Step 2** 定义了报告的结构和分析维度（工作内容分类、提问模式、工具使用、建议等）。如果默认报告不满足需求，可以直接让 Claude Code 修改这部分内容，例如：
+
+> 帮我修改 claude-chat-report 的 SKILL.md，在报告中增加"对话语言分布"一节，统计中英文提问的比例
+
+Claude Code 会直接编辑 `SKILL.md`，下次执行 `/claude-chat-report` 时即生效。
+
 ## 相关项目
 
 如果需要将对话历史导出为完整网页（HTML 格式，支持代码高亮、工具调用展示），推荐可以使用：
